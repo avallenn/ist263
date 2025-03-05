@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            .flex1 {display: flex; padding: 30px;}
+            .ad {flex: 1; background-color: #e4edf2; border-radius: 1em;}
+            .email {flex: 3; background-color: #e4edf2; border-radius: 1em;}
+            .flex2 {display: flex; padding: 30px;}
+            .map {flex: 2; order: 2; background-color: #e4edf2; border-radius: 1em;}
+            .form {flex: 1; order: 1; background-color: #e4edf2; border-radius: 1em;}
+            .ad, .email, .map, .form {margin: 10px; padding: 10px;}
+        </style>
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="table.html">Skills</a>
+        </nav>
+        <h1>Contact</h1>
+        <div class = "flex1"><div class = 'ad'><p><strong>Address</strong><br>
+         Avery Allen<br>
+        900 S Crouse Ave <br> Syracuse, NY 13244</p></div>
+        <div class = 'email'><p><a href="mailto:avallen@syr.edu" target="_blank">Avery Allen Email</a><br>
+        <a href="https://www.linkedin.com/in/averyallen13/" target="_blank"><img src="../images/logo-sized.png" alt="LinkedIn"></a><br>
+        <a href="https://www.linkedin.com/in/averyallen13/" target="_blank">My LinkedIn Profile</a></p></div></div>
+        <div class = 'flex2'><div class = 'map'><p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2915.6236736232827!2d-76.14062992340492!3d43.04934889127588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3a5e0952113%3A0xa671279445418b15!2s820-900%20S%20Crouse%20Ave%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1738172494445!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></div>
+        <p><div class = 'form'><form action="https://formspree.io/f/xvgzqgga" method="post">
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname" name="fname">
+            <br>
+            <label for="question">Did you enjoy this page?</label>
+            <br>
+            <select id="question" name="question">
+                <option value="yes">Yes</option>
+                <option value="kinda">Kinda</option>
+                <option value="no">No</option>
+            </select>
+            <br>
+            <label for="text">Please further explain your answer above:</label><br>
+            <textarea id="text" name="text"></textarea>
+            <br>
+            <input type="submit" value="Send Form">
+            <br>
+        </form></p></div></div>
+    </body>
+
+</html>
