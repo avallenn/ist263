@@ -1,10 +1,10 @@
 header {background-color: rgb(159, 174, 188);
 padding: 10px; text-align: center; margin-bottom: 50px; border-radius: 10px;}
-nav a {color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px;}
-nav a:hover {background-color: #4c7993;}
-nav h1 {color: white; font-size: 35px;}
+nav a {color: #000057; text-decoration: none; padding: 10px 20px; border-radius: 5px;}
+nav a:hover {background-color: #4c7993; color:white;}
+header h1 {color: #000057; font-size: 35px;}
 body {font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
 main {color: #325163; padding: 20px;}
 main a {color:#325163}
 main a:hover {background-color: #4c7993; color:white;}
-footer {background-color: rgb(159, 174, 188); color:white; padding: 20px;border-radius: 10px;}
+footer {background-color: rgb(159, 174, 188); color:#000057; padding: 20px;border-radius: 10px;}

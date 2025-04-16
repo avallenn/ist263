@@ -1,0 +1,34 @@
+body {font-family: Georgia, serif;}
+h1, h2 {color: #011f4b;}
+.evenrow {background-color: lightgrey;
+    color: #2F4F4F;}
+h1 {font-size: 3em;}
+h2 {font-size: 1.75em;}
+p {color: #03396c;
+    background-color: #e4edf2;}
+a {color: #6497b1}
+nav {color: #b3cde0;
+    background-color: #011f4b;
+    padding: 10px;
+    margin-bottom: 30px}
+nav a {color: #cae5de}
+nav a:hover {color: #b2d1aa}
+.pic {max-width: 100%;}
+@media only screen and (max-width: 800px)
+{nav a {display: block;
+    max-width:100%;
+    padding: 5px;}
+    span {display:none}}
+ .skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    }
+.skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    }
