@@ -11,7 +11,7 @@ nav {color: #b3cde0;
     background-color: #011f4b;
     padding: 10px;
     margin-bottom: 30px}
-nav a {color: #cae5de}
+nav a {color: #ffffff;}
 nav a:hover {color: #b2d1aa}
 .pic {max-width: 100%;}
 @media only screen and (max-width: 800px)
