@@ -8,3 +8,7 @@ main {color: #325163; padding: 20px;}
 main a {color:#325163}
 main a:hover {background-color: #4c7993; color:white;}
 footer {background-color: rgb(159, 174, 188); color:#000057; padding: 20px;border-radius: 10px;}
+@media only screen and (max-width: 800px)
+{nav a {display: block; max-width:100%; padding: 5px;} span {display:none}}
+ .skip {position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden;}
+.skip:focus {position: static; width: auto; height: auto;}
