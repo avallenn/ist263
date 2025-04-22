@@ -5,6 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Adopt Don't Shop</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            .container{display:flex; padding: 20px; justify-content: center;}
+            .puppymill {margin: 0 auto; padding: 20px; border-radius:10px; 
+                background-color: #ffcb90; max-width:60%; border: 5px dotted #ff6f47; width:70%;}
+            h2 {text-align: center;}
+            .slideshow-container {position: relative; margin: 0 auto; display:flex; justify-content: center; background-color: #dee7e8; border:5px dotted rgb(77, 132, 215); padding:20px; border-radius: 10px; width:30%; display: inline-block;}
+            .slidefade img {max-width: 100%; height: auto; border-radius: 8px;}
+            .prev, .next {cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px; padding: 16px; color: white; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 0 3px 3px 0; user-select: none;}
+            .prev {left:0;}
+            .next {right:0;}
+            .slidefade {display:none;}
+            .slidefade.active {display:block;}
+        </style>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);}
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);}
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slidefade");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+                slides[slideIndex-1].classList.add("active");}
+        </script>
     </head>
 
     <body>
@@ -17,7 +50,7 @@
         </header>
 
         <main id="main">
-            <h2>Do You Really Know What A Puppy Mill Is?</h2>
+            <div class='container'><div class="puppymill"><h2>Do You Really Know What A Puppy Mill Is?</h2>
             <p class="info">Puppy/cat mills are commercially bred and massed produced dogs and cats. They are legally allowed to keep hundreds of dogs in cages for the entirety of their life, for the purpose of producing puppies. Because they are seen as a cash crop instead of an animal, they are treated inhumanely:</p>
             <ul>
                 <li>Puppies are confined to overcrowded cages with no room or cover from the weather</li>
@@ -26,15 +59,18 @@
                 <li>Adult dogs are continuously bred until they cannot reproduce and are then discarded once they have no use</li>
                 <li>They are taken from their mothers at a very early age</li>
                 <li>Later in life they show issues like eye and hip defects, parasites, and deadly viruses</li>
-            </ul>
-            <div class="img">
-                <div class="img1">
-                    <img src="media/puppymill1.jpeg" alt="Dogs in cages" width="1000"></div>
-                <div class="img2">
-                    <img src="media/puppymill2.jpeg" alt="Dogs in cages" width="1000"></div>
-                <div class="img3">
-                    <img src="media/puppymill3.jpg" alt="Dogs in cages"></div>
-            </div>
+            </ul></div>
+            <div class="slideshow-container">
+                <div class="slidefade active">
+                    <img src="media/puppymill1.jpeg" alt="Dogs in overcrowded cages" width="400"></div>
+                <div class="slidefade">
+                    <img src="media/puppymill2.jpeg" alt="Golden retriever puppies in cages" width="400"></div>
+                <div class="slidefade">
+                    <img src="media/puppymill3.jpg" alt="Dogs in a pet store" width="400"></div>
+            
+                <div class='prev'><a onclick="plusSlides(-1)">&#10094;</a></div>
+                <div class='next'><a onclick="plusSlides(1)">&#10095;</a></div>
+            </div></div>
             <div class="awareness">
                 <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/C34ML7b_WuM?si=53qjwsK3c67GhKw_" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
