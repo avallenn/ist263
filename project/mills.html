@@ -8,8 +8,8 @@
         <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
         <style>
             .container{display:flex; padding: 20px; justify-content: center;}
-            .puppymill {margin: 0 auto; padding: 20px; border-radius:10px; 
-                background-color: #ffcb90; max-width:60%; border: 5px dotted #ff6f47; width:70%;}
+            .puppymill {padding: 20px; border-radius:10px; 
+                background-color: #ffcb90; border: 5px dotted #ff6f47; width:70%; margin-right:20px}
             h2 {text-align: center;}
             .slideshow-container {position: relative; margin: 0 auto; justify-content: center; background-color: #dee7e8; border: 5px dotted rgb(77, 132, 215); padding: 20px; border-radius: 10px; width: 30%; display: inline-block; height: fit-content;}
             .slidefade img {border-radius: 8px; width: 90%; height: auto; object-fit: cover; margin: 0 auto; display: block;}
@@ -19,17 +19,20 @@
             .slidefade {display:none;}
             .slidefade.active {display:block;}
             .awareness {display: flex; justify-content: center; margin: 20px; padding: 20px;}
-            .how {width: 40%; margin-left: 150px; background-color: #f7d9ff; 
-                border:5px dotted #ae81bb; padding:20px; border-radius: 10px;}
+            .video {width: 40%; aspect-ratio: 16 / 9;}
+            .video iframe {width: 100%; height: 100%;}
+            .how {width: 60%; margin-left: 150px; background-color: #f7d9ff; 
+                border:5px dotted #ae81bb; padding:20px; border-radius: 10px; display: inline-block; height: fit-content;}
             .stop {margin: 20px; padding: 20px; background-color: #dee7e8; 
-                border-radius: 10px; max-width: 50%; margin: 0 auto; border: 5px dotted rgb(77, 132, 215);}
+                border-radius: 10px; max: 50%; margin: 0 auto; border: 5px dotted rgb(77, 132, 215);}
             @media only screen and (max-width: 800px) {
             .container {flex-wrap: wrap; justify-content: center;}
-            .puppymill {width: 100%; margin: 5px; padding: 10px; margin-bottom: 20px;}
+            .puppymill {width: 100%; margin: 0 auto; padding: 10px; margin-bottom: 20px;}
             .awareness {flex-wrap: wrap; flex-direction: column; align-items: center;}
             .how {width: 90%; margin: 10px 0; padding: 10px;}
             .slideshow-container {width: 100%; padding: 10px;}
-            .stop {max-width: 100%; padding: 15px;}}
+            .stop {width: 90%; padding: 20px; margin: 20px auto; box-sizing: border-box; word-wrap: break-word;}
+            .video {width:100%}}
         </style>
         <script>
             let slideIndex = 1;
